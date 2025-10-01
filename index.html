@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NourishIQ — Bio-Adaptive Nutrition Method™</title>
+  <meta name="description" content="NourishIQ uses the Bio-Adaptive Nutrition Method™ (BANM) to turn nutrition science into daily meals you’ll actually eat.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <style>
+    body {margin:0;font-family:'Inter',sans-serif;background:#fff;color:#0e1a24;}
+    .container{max-width:1200px;margin:0 auto;padding:0 24px;}
+    a{color:#2e7d32;text-decoration:none;}
+    h1,h2{color:#1b5e20}
+    .btn{background:#2e7d32;color:#fff;padding:12px 18px;border-radius:12px;font-weight:800;box-shadow:0 4px 12px rgba(0,0,0,.2);}
+    .btn:hover{filter:brightness(.9)}
+
+    header{position:sticky;top:0;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid #eee}
+    header .wrap{display:flex;align-items:center;justify-content:space-between;padding:14px 0;}
+    header .brand{font-weight:800;font-size:22px;color:#1b5e20;}
+
+    .hero{min-height:90vh;display:flex;align-items:center;justify-content:center;text-align:center;
+      background:linear-gradient(160deg,rgba(15,61,46,.8),rgba(46,125,50,.8)),url('https://source.unsplash.com/1600x900/?superfoods,athlete') no-repeat center/cover;
+      color:#fff;padding:80px 20px;}
+    .hero h1{font-size:48px;margin-bottom:20px;text-shadow:0 6px 20px rgba(0,0,0,.5);}
+    .hero p{font-size:20px;max-width:700px;margin:0 auto 30px;}
+    .form input{padding:14px;width:100%;border:1px solid #ccc;border-radius:10px;margin:8px 0;}
+    .form button{width:100%;padding:14px;border:none;border-radius:10px;background:#2e7d32;color:#fff;font-weight:800;}
+
+    section{padding:80px 0;}
+    .grid{display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));}
+    .card{background:#fff;border:1px solid #eee;border-radius:16px;padding:20px;box-shadow:0 4px 12px rgba(0,0,0,.1);}
+
+    footer{background:#0f3d2e;color:#d8ffe8;text-align:center;padding:30px;}
+  </style>
+</head>
+<body>
+<header>
+  <div class="container wrap">
+    <div class="brand">NourishIQ</div>
+    <nav>
+      <a href="#banm">BANM</a> · <a href="#how">How it Works</a> · <a href="#benefits">Benefits</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div>
+    <h1>Eat well without the guesswork.</h1>
+    <p>NourishIQ turns nutrition science into <strong>daily meals you’ll actually eat</strong>. Our Bio-Adaptive Nutrition Method™ adapts to your lifestyle, budget and taste—no guilt, no fads.</p>
+    <form name="waitlist" method="POST" data-netlify="true" class="form">
+      <input type="hidden" name="form-name" value="waitlist">
+      <input type="text" name="name" placeholder="Your name" required>
+      <input type="email" name="email" placeholder="Email address" required>
+      <button type="submit">Join the Waitlist</button>
+    </form>
+  </div>
+</section>
+
+<section id="banm">
+  <div class="container">
+    <h2>What is BANM?</h2>
+    <p>BANM is like a GPS for your health. You share your goals and preferences, it guides you meal by meal, and adjusts if life changes—without guilt or restriction.</p>
+  </div>
+</section>
+
+<section id="how">
+  <div class="container">
+    <h2>How it Works</h2>
+    <div class="grid">
+      <div class="card"><h3>Personalised & Practical</h3><p>Meals that fit your taste, lifestyle, and goals—not someone else’s.</p></div>
+      <div class="card"><h3>Smart Shopping</h3><p>One-tap lists, seasonal swaps, affordable ingredients. Eat better, spend less.</p></div>
+      <div class="card"><h3>Built with Science</h3><p>Evidence-based nutrition, balanced macros & nutrients without fads.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="benefits">
+  <div class="container">
+    <h2>Benefits You’ll Feel</h2>
+    <div class="grid">
+      <div class="card"><h3>Save Time</h3><p>No more “what’s for dinner?” stress.</p></div>
+      <div class="card"><h3>Save Money</h3><p>Optimised lists and seasonal choices keep costs sensible.</p></div>
+      <div class="card"><h3>Better Health</h3><p>Balanced meals matched to your goals—without obsession.</p></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2025 NourishIQ — <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a>
+</footer>
+</body>
+</html>
