@@ -1,45 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>NourishIQ — Bio-Adaptive Nutrition Method™</title>
-  <meta name="description" content="NourishIQ uses the Bio-Adaptive Nutrition Method™ (BANM) to turn nutrition science into daily meals you’ll actually eat.">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <meta name="description" content="NourishIQ turns nutrition science into daily meals you’ll actually eat. BANM adapts to your lifestyle, budget and taste—no guilt, no fads." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet" />
 
   <style>
-    body {margin:0;font-family:'Inter',sans-serif;background:#fff;color:#0e1a24;}
-    .container{max-width:1200px;margin:0 auto;padding:0 24px;}
-    a{color:#2e7d32;text-decoration:none;}
-    h1,h2{color:#1b5e20}
-    .btn{background:#2e7d32;color:#fff;padding:12px 18px;border-radius:12px;font-weight:800;box-shadow:0 4px 12px rgba(0,0,0,.2);}
-    .btn:hover{filter:brightness(.9)}
+    :root{
+      --primary:#184C37;      /* NourishIQ dark green */
+      --secondary:#58C056;    /* Leaf green */
+      --teal:#33B3A6;         /* Brain teal */
+      --aqua:#4AC9CC;         /* Brain aqua */
+      --banm-dark:#0B2C3B;    /* BANM dark background */
+      --banm-mid:#1B7C6B;     /* DNA gradient mid */
+      --banm-glow:#8EEB89;    /* BANM glow */
+      --light:#FFFFFF;        /* Background */
+      --dark:#122026;         /* Footer / text */
+      --shadow:0 16px 40px rgba(0,0,0,.15);
+    }
+
+    body {margin:0;font-family:'Inter',sans-serif;background:var(--light);color:var(--dark);}
+    a{color:var(--teal);text-decoration:none;}
+    h1,h2{color:var(--primary);}
 
     header{position:sticky;top:0;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid #eee}
-    header .wrap{display:flex;align-items:center;justify-content:space-between;padding:14px 0;}
-    header .brand{font-weight:800;font-size:22px;color:#1b5e20;}
+    header .wrap{display:flex;align-items:center;justify-content:space-between;padding:14px 24px;}
+    .brand{display:flex;align-items:center;gap:10px;}
+    .brand img{height:40px;}
+    nav a{margin:0 10px;font-weight:600;}
+
+    .btn{background:var(--secondary);color:#fff;padding:12px 18px;border-radius:12px;font-weight:800;box-shadow:var(--shadow);}
+    .btn:hover{filter:brightness(.9)}
 
     .hero{min-height:90vh;display:flex;align-items:center;justify-content:center;text-align:center;
-      background:linear-gradient(160deg,rgba(15,61,46,.8),rgba(46,125,50,.8)),url('https://source.unsplash.com/1600x900/?superfoods,athlete') no-repeat center/cover;
+      background:linear-gradient(160deg,rgba(11,44,59,.85),rgba(27,124,107,.8)),url('https://source.unsplash.com/1600x900/?superfoods,healthy,athletes') no-repeat center/cover;
       color:#fff;padding:80px 20px;}
-    .hero h1{font-size:48px;margin-bottom:20px;text-shadow:0 6px 20px rgba(0,0,0,.5);}
+    .hero h1{font-size:52px;margin-bottom:20px;text-shadow:0 6px 20px rgba(0,0,0,.5);}
     .hero p{font-size:20px;max-width:700px;margin:0 auto 30px;}
+
     .form input{padding:14px;width:100%;border:1px solid #ccc;border-radius:10px;margin:8px 0;}
-    .form button{width:100%;padding:14px;border:none;border-radius:10px;background:#2e7d32;color:#fff;font-weight:800;}
+    .form button{width:100%;padding:14px;border:none;border-radius:10px;background:var(--primary);color:#fff;font-weight:800;}
 
     section{padding:80px 0;}
+    .container{max-width:1200px;margin:0 auto;padding:0 24px;}
     .grid{display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));}
     .card{background:#fff;border:1px solid #eee;border-radius:16px;padding:20px;box-shadow:0 4px 12px rgba(0,0,0,.1);}
 
-    footer{background:#0f3d2e;color:#d8ffe8;text-align:center;padding:30px;}
+    footer{background:var(--banm-dark);color:#d8ffe8;text-align:center;padding:30px;}
   </style>
 </head>
 <body>
 <header>
-  <div class="container wrap">
-    <div class="brand">NourishIQ</div>
+  <div class="wrap">
+    <div class="brand">
+      <img src="assets/nourishiq-logo.png" alt="NourishIQ logo" onerror="this.style.display='none'">
+      <strong>NourishIQ</strong>
+    </div>
     <nav>
-      <a href="#banm">BANM</a> · <a href="#how">How it Works</a> · <a href="#benefits">Benefits</a>
+      <a href="#banm">BANM</a>
+      <a href="#how">How it Works</a>
+      <a href="#benefits">Benefits</a>
     </nav>
   </div>
 </header>
@@ -60,7 +82,8 @@
 <section id="banm">
   <div class="container">
     <h2>What is BANM?</h2>
-    <p>BANM is like a GPS for your health. You share your goals and preferences, it guides you meal by meal, and adjusts if life changes—without guilt or restriction.</p>
+    <p><strong>BANM (Bio-Adaptive Nutrition Method™)</strong> is like a GPS for your health. You share your goals and preferences, it guides you meal by meal, and adjusts if life changes—without guilt or restriction.</p>
+    <img src="assets/banm-mark.png" alt="BANM logo" style="max-width:240px;margin-top:20px;" onerror="this.style.display='none'">
   </div>
 </section>
 
@@ -87,7 +110,7 @@
 </section>
 
 <footer>
-  © 2025 NourishIQ — <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a>
+  <p>© 2025 NourishIQ — <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></p>
 </footer>
 </body>
 </html>
